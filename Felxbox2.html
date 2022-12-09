@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .flexcontainer{
+            display: flex;
+        }
+        .box1{
+            background-color: aquamarine;
+            height: 100vh;
+            flex: 2;
+            padding: 1rem;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .right{
+            flex: 7;
+            display: flex;
+            flex-direction: column;
+        }
+        .box2{
+            background-color: lightgreen;
+            height: 150px;
+            font-size: 50px;
+            padding: 1rem;
+            font-weight: bold;
+        }
+        .box3{
+            background-color: antiquewhite;
+            height: 430px;
+            font-size: 50px;
+            padding: 1rem;
+            font-weight: bold;
+
+        }
+        .box4{
+            background-color: lightgreen;
+            height: 150px;
+            font-size: 50px;
+            padding: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div class="box1">Nav</div>
+        <div class="right">
+            <div class="box2">Header</div>
+            <div class="box3">Article</div>
+            <div class="box4">Footer</div>
+        </div>
+    </div>
+</body>
+</html>

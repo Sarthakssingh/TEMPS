@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+.title{
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 29px;
+}
+.row{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+
+}
+.coulmn1{
+    background-color: rgb(181, 182, 182);
+}
+.coulmn2{
+    background-color: rgb(157, 153, 153);
+}
+.coulmn3{
+    background-color: rgb(104, 102, 102);
+}
+.coulmn4{
+    background-color: rgb(68, 65, 65);
+}
+@media screen and (max-width: 1000px) and (min-width:600px) {
+    .coulmn1{
+        float: left;
+        width: 50%;
+    }
+    .coulmn2{
+        float: left;
+        width: 50%;
+    }
+    .coulmn3{
+        float: left;
+        width: 50%;
+    }
+    .coulmn4{
+        float: left;
+        width: 50%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .coulmn1{
+        float: left;
+        width: 25%;
+    }
+    .coulmn2{
+        float: left;
+        width: 25%;
+    }
+    .coulmn3{
+        float: left;
+        width: 25%;
+    }
+    .coulmn4{
+        float: left;
+        width: 25%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .coulmn1{
+        float: left;
+        width: 100%;
+    }
+    .coulmn2{
+        float: left;
+        width: 100%;
+    }
+    .coulmn3{
+        float: left;
+        width: 100%;
+    }
+    .coulmn4{
+        float: left;
+        width: 100%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  }
